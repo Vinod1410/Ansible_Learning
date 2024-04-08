@@ -1,0 +1,7 @@
+---
+ - name: deploy a web application
+   hosts: localhost
+
+   tasks:
+     - name: ping the server. 
+       ping:
