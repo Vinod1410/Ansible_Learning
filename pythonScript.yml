@@ -1,6 +1,6 @@
 ---
  - name: deploy a web application
-   hosts: {{ HOSTS }}
+   hosts: "{{ HOSTS }}"
    gather_facts: yes
 
    tasks:
