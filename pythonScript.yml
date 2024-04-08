@@ -6,5 +6,6 @@
    tasks:
      - name: ping the server. 
        ping:
-       debug:
+     - name: print the server.
+       debug: 
          msg: "Print the reachable server {{ HOSTS }}"
