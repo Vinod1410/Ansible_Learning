@@ -1,7 +1,10 @@
 ---
  - name: deploy a web application
-   hosts: localhost
+   hosts: {{ HOSTS }}
+   gather_facts: yes
 
    tasks:
      - name: ping the server. 
        ping:
+       debug:
+         msg: "Print the reachable server {{ HOSTS }}"
